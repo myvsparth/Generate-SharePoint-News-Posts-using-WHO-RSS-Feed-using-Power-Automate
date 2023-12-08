@@ -63,7 +63,8 @@ Compose JSON compatible file content (replacing " with \\\" because it breaks js
 Compose removed new lines (removing new lines) -> uriComponentToString(replace(replace(outputs('Compose_JSON_compatible_file_content'), '%0D%0A', ''), '%0A', '')) 
 #### 9 
 Send an HTTP request to create file -> 
-```_api/web/getfilebyserverrelativeurl('/sites/WHONews/SitePages/WHOTemplate.aspx')/copyto(strnewurl='/sites/WHONews/SitePages/@{items('Apply_to_each')?['title']}.aspx',bOverwrite=true) 
+```
+_api/web/getfilebyserverrelativeurl('/sites/WHONews/SitePages/WHOTemplate.aspx')/copyto(strnewurl='/sites/WHONews/SitePages/@{items('Apply_to_each')?['title']}.aspx',bOverwrite=true) 
 ```
 #### 10 
 Get file metadata of newly created file ->
